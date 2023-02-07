@@ -1,0 +1,1 @@
+# **This bot takes a simple !ping command and returns "pong" in the channel the command was posted in.**
