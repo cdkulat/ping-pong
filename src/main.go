@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"strings"
 
 	"github.com/bwmarrin/discordgo"
 )
 
 func main() {
-	discord, err := discordgo.New("Bot " + "$BOT_TOKEN")
+	token := os.Getenv("BOT_TOKEN")
+	discord, err := discordgo.New("Bot " + token)
 	if err != nil {
 		fmt.Println("Error creating Discord session:", err)
 		return
