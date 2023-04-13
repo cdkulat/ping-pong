@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	discord, err := discordgo.New("Bot " + "MTA5NjE3MTYyMzkwMTU3NzMwNg.Gq9krr.JYtby-gBnhPSCL947oB6BMusB7SE8SbMmisu6k")
+	discord, err := discordgo.New("Bot " + "$BOT_TOKEN")
 	if err != nil {
 		fmt.Println("Error creating Discord session:", err)
 		return
